@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color:#333;
+        }
+
+        header {
+            background-color:teal;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(44, 46, 171);
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            background-color:lightblue;
+            border-radius: 5px;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            color:rgb(32, 104, 149);
+        }
+        
+        .projects, .skills, .contact, .video {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: teal;
+            color: white;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color:teal;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color:#255171;
+        }
+        video {
+            width: 30%;
+            height: 30%;
+            max-height: 500px;
+            max-width: 500px;
+            display: block;
+            margin: 20px auto;
+        }
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .projects, .skills, .contact, .video {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#video">Video</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Kashaf Imtiaz, a passionate undergraduate Software Engineer. 
+        Currently I am in 5th semester and trying my best to enhance my skills. I also have done UI/UX designing.
+        I enjoy creating clean, efficient, and modern designs that provide a seamless experience to users. 
+
+    <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div>
+    <h3>Event Management website</h3>
+    <p>Welcome to our exciting event! Join us for an unforgettable experience filled with engaging activities,
+         inspiring speakers, and unforgettable moments. Whether you're here to network, learn, or have fun, there's something for everyone. 
+        Don’t miss out – be part of this incredible event!</p>
+    </div>
+
+   <div>
+        <h3>Airline Reservation website</h3>
+        <p>Welcome to our Airline Reservation System! Book your flights with ease, find the best deals,
+             and manage your travel plans effortlessly. With a user-friendly interface and real-time updates, 
+             your journey begins here.  Get ready for a seamless travel experience from start to finish!</p>
+            </div>
+
+            <div>
+         <h3>Library Management website</h3>
+        <p>Welcome to our Library Management System! Easily search, borrow, and manage your books all in one
+        place.With a simple and efficient interface,finding your next read is just a click away.
+        Enjoy a seamless library experience tailored to your needs!</p>
+    </div>
+</section>
+
+<section id="skills" class="skills">
+    <h2>Skills & Qualifications</h2>
+    <table>
+        <tr>
+            <th>Skill</th>
+            <th>Proficiency</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Advanced</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Advanced</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Basic</td>
+        </tr>
+        <tr>
+            <td>UI/UX designing</td>
+            <td>Intermediate</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Beginner</td>
+        </tr>
+    </table>
+</section>
+<section id="contact" class="contact">
+    <h2>Contact:</h2>
+    <form action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<section id="video" class="video">
+    <h2> Study Video</h2>
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+</body>
+</html>
